@@ -23,7 +23,10 @@ function onInputChange(evt) {
 
 function renderMarcup(data) {
   countryInfo.innerHTML = '';
-
+  if (data.length > 10) {
+    Notify.info('Too many matches found. Please enter a more specific name.');
+    return;
+  }
   if (data.length >= 2) {
     data.forEach(elem => {
       countryInfo.innerHTML += someCountriesMarkup(elem);
