@@ -13,10 +13,20 @@ body {
 }
 
 #search-box {
+  display: flex;
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 101px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#search-box:focus {
+  background-color: rgb(201, 193, 195);
+  color: white;
+  border-color: rgb(245, 201, 8);
+  outline: none;
 }
 li {
   list-style: none;
@@ -24,4 +34,7 @@ li {
 .country-list_item {
   display: flex;
   align-items: center;
+}
+.country-info {
+  padding: 0 400;
 }
